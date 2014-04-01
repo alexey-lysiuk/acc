@@ -8,7 +8,11 @@
 // HEADER FILES ------------------------------------------------------------
 
 #include <string.h>
+#ifdef __APPLE__
+#include <stdlib.h>
+#else // !__APPLE__
 #include <malloc.h>
+#endif // __APPLE__
 #include "common.h"
 #include "strlist.h"
 #include "error.h"
