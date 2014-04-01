@@ -9,3 +9,11 @@
 /log
 /t
 /zdefs.acs.orig
+
+# OS X
+build/
+DerivedData/
+xcuserdata/
+*.mode1v3
+*.pbxuser
+*.xccheckout
