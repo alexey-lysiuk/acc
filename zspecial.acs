@@ -108,6 +108,7 @@ special
 //	101:Scroll_Texture_Right
 //	102:Scroll_Texture_Up
 //	103:Scroll_Texture_Down
+	104:Ceiling_CrushAndRaiseSilentDist(4,5),
 
 	109:Light_ForceLightning(1),
 	110:Light_RaiseByValue(2),
@@ -323,6 +324,16 @@ special
 	-78:GetActorPowerupTics(2),
 	-79:ChangeActorAngle(2,3),
 	-80:ChangeActorPitch(2,3),
+	-81:GetArmorInfo(1),
+	-82:DropInventory(2),
+	-83:PickActor(5,8),
+	-84:IsPointerEqual(2,4),
+	-85:CanRaiseActor(1),
+	-86:SetActorTeleFog(3),
+	-87:SwapActorTeleFog(1),
+	-88:SetActorRoll(2),
+	-89:ChangeActorRoll(2,3),
+	-90:GetActorRoll(1),
 	
 	// Zandronum's
 	-100:ResetMap(0),
@@ -332,6 +343,25 @@ special
 	-104:GetPlayerLivesLeft(1),
 	-105:SetPlayerLivesLeft(2),
 	-106:KickFromGame(2),
+	-107:GetGamemodeState(0),
+	-108:SetDBEntry(3),
+	-109:GetDBEntry(2),
+	-110:SetDBEntryString(3),
+	-111:GetDBEntryString(2),
+	-112:IncrementDBEntry(3),
+	-113:PlayerIsLoggedIn(1),
+	-114:GetPlayerAccountName(1),
+	-115:SortDBEntries(4),
+	-116:CountDBResults(1),
+	-117:FreeDBResults(1),
+	-118:GetDBResultKeyString(2),
+	-119:GetDBResultValueString(2),
+	-120:GetDBResultValue(2),
+	-121:GetDBEntryRank(3),
+	-122:RequestScriptPuke(4),
+	-123:BeginDBTransaction(0),
+	-124:EndDBTransaction(0),
+	-125:GetDBEntries(1),
 	
 	// ZDaemon's
 	-19260:GetTeamScore(1),
