@@ -334,7 +334,9 @@ special
 	-88:SetActorRoll(2),
 	-89:ChangeActorRoll(2,3),
 	-90:GetActorRoll(1),
-	
+	-91:QuakeEx(8,12),
+	-92:Warp(6,9),
+
 	// Zandronum's
 	-100:ResetMap(0),
 	-101:PlayerIsSpectator(1),
@@ -364,8 +366,8 @@ special
 	-125:GetDBEntries(1),
 	
 	// ZDaemon's
-	-19260:GetTeamScore(1),
-	-19261:SetTeamScore(2),
+	-19620:GetTeamScore(1),
+	-19621:SetTeamScore(2),
 	
 	-100000:__EndOfList__(10);
 	
