@@ -4,12 +4,11 @@ on: [push, pull_request]
 
 jobs:
   build:
-    name: ${{ matrix.config.name }} | ${{ matrix.config.build_type }}
+    name: ${{ matrix.config.name }} | ${{ matrix.build_type }}
     runs-on: ${{ matrix.config.os }}
     strategy:
       fail-fast: false
       matrix:
-        build_type: ["Debug", "Release"]
         config:
         - {
             name: "Visual Studio 64-bit",
@@ -34,6 +33,7 @@ jobs:
             os: ubuntu-latest,
             extra_options: "-DCMAKE_C_COMPILER=/usr/bin/clang -DCMAKE_CXX_COMPILER=/usr/bin/clang++"
           }
+        build_type: ["Release", "Debug"]
 
     steps:
     - uses: actions/checkout@v1
