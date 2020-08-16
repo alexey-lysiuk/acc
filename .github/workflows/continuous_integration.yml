@@ -52,5 +52,4 @@ jobs:
     - name: test
       shell: cmd
       run: |
-        path
-        dumpbin.exe /IMPORTS build/${{ matrix.build_type }}/acc.exe
+        .github\workflows\vsdevcmd.bat dumpbin.exe /IMPORTS build/${{ matrix.build_type }}/acc.exe
