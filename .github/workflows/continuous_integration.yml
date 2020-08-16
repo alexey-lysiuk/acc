@@ -52,6 +52,7 @@ jobs:
     - name: test
       shell: cmd
       run: |
+        vswhere.exe -latest -property installationPath
         .github\workflows\vsdevcmd.bat
         echo _1_
         dumpbin.exe /IMPORTS build/${{ matrix.build_type }}/acc.exe
