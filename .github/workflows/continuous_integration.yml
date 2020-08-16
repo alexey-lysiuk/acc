@@ -50,4 +50,7 @@ jobs:
         cmake --build build --config ${{ matrix.build_type }} --parallel 3
 
     - name: test
-      run: dumpbin.exe /IMPORTS build/${{ matrix.build_type }}/acc.exe
+      shell: cmd
+      run: |
+        path
+        dumpbin.exe /IMPORTS build/${{ matrix.build_type }}/acc.exe
